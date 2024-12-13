@@ -1,0 +1,30 @@
+{
+  "extends": "@repo/config-typescript/nextjs",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ],
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@configs/*": [
+        "./src/configs/*"
+      ]
+    }
+  },
+  "include": [
+    ".eslintrc.js",
+    "next.config.js",
+    "postcss.config.mjs",
+    "tailwind.config.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "next-env.d.ts",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
